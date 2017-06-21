@@ -27,8 +27,9 @@ Initialize:
 
 ```js
 
-var stories = new Zuck({
-    id: '',                // timeline container id or reference
+var element = '#container';
+
+var stories = new Zuck(element, {
     skin: 'snapgram',      // container class
     avatars: true,         // shows user photo instead of last story item preview
     list: false,           // displays a timeline instead of carousel
