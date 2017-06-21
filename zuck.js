@@ -9,6 +9,9 @@ window['ZuckitaDaGalera'] = window['Zuck'] = function(timeline, options) {
         timeline = d.getElementById(timeline);
     }
 
+    if (typeof options === 'undefined') {
+        options = {};
+    }
 
     /* core functions */
     var q = function(query) {
